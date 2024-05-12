@@ -6,8 +6,8 @@ Package.describe({
 })
 
 Package.onUse(function (api) {
-  api.versionsFrom(['METEOR@1.5', 'METEOR@1.10'])
-  api.use(['ecmascript', 'ejson', 'svelte:compiler@3.6.7_1'])
+  api.versionsFrom(['METEOR@2.0'])
+  api.use(['ecmascript', 'ejson', 'zodern:melte'])
 
   api.mainModule('svelte-loadable-server.js', 'server', { lazy: true })
   api.mainModule('svelte-loadable-client.js', 'client', { lazy: true })
